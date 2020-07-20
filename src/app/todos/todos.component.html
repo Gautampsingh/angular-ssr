@@ -1,1 +1,5 @@
-<p>todos works!</p>
+<ul>
+    <li *ngFor="let todo of [].constructor(50); let i=index" [routerLink]="['/todos', i+1]">
+        {{'todo'}} {{i+1}}
+    </li>
+</ul>
